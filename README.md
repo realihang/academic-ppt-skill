@@ -1,29 +1,28 @@
 # 科研汇报 Academic PPT
 
-科研汇报的通用格式 Skill，默认 **16:9**，支持 **4:3**。
-
-中文使用微软雅黑，英文与数字使用 Arial；正文标题36磅，正文与总结28磅。
+科研汇报的通用格式Skill，默认16:9，支持4:3。中文使用微软雅黑，英文与数字使用Arial；正文标题36磅，正文与表格28磅。
 
 ## 使用
 
-将本仓库保存到个人 Codex 技能目录下的 `artifact-template-academic-ppt` 文件夹。制作时调用 `$artifact-template-academic-ppt`，提供本次材料、汇报时长和页面比例。
+将仓库保存到个人Codex技能目录中的 `artifact-template-academic-ppt` 文件夹，调用 `$artifact-template-academic-ppt`，并提供本次材料、时长与页面比例。
 
-例如：使用 $artifact-template-academic-ppt，将这篇论文制作成约20分钟的4:3汇报，优先使用论文原图，并把逐页中文讲稿放进备注。
+## 参考资源
 
-## 格式参考
-
-| 路径 | 用途 |
+| 文件 | 用途 |
 | --- | --- |
-| [SKILL.md](SKILL.md) | 制作规范 |
-| [assets/reference.pptx](assets/reference.pptx) | 默认16:9通用参考，14页 |
-| [assets/reference-4x3.pptx](assets/reference-4x3.pptx) | 可选4:3通用参考，14页 |
-| assets/preview.png、assets/preview-4x3.png | 两种比例的封面预览 |
-| assets/style-overview.png、assets/style-overview-4x3.png | 通用版式概览 |
-| references/ | 母版索引、内容组织、配色及脱敏规则 |
-| scripts/ | 保留原生母版的选页复制与点击淡入工具 |
+| [assets/reference.pptx](assets/reference.pptx) | 默认16:9母版与基本页面结构 |
+| [assets/reference-4x3.pptx](assets/reference-4x3.pptx) | 4:3母版与基本页面结构 |
+| [assets/element-reference.pptx](assets/element-reference.pptx) | 10类60种可编辑组合；当前为审阅稿 |
+| [references/element-catalog.md](references/element-catalog.md) | 类别、编号、页码及适用场景索引 |
+| [references/design-guide.md](references/design-guide.md) | 字体、字号、母版与占位符规范 |
+| [references/composition-guide.md](references/composition-guide.md) | 七色色板、图文组织和元素取舍 |
+| assets/preview.png、assets/previews/ | 模板封面及辅助预览 |
+| scripts/ | 原生选页复制与按需点击淡入工具 |
 
-目录随材料变化，章节开始时回访并高亮。表格双向居中，并列条目使用较大的实心正方形列表。以简洁直角元素、清楚的对比度和充足留白呈现学术内容。
+元素参考PPT共63页：封面、两页可点击分类索引，以及60页独立组合。主体可以整体复制，也可以取消组合分别编辑。备注包含用途、结构和编辑提示。
 
-参考资产只展示通用文字、空图框、示例表格与可编辑格式。本机偏好可保存在 `.local/presenter.json`，该目录不参与分享。参考材料的保管与分享规则见 [脱敏与打包检查](references/privacy-guide.md)。
+用户优化并回传最终版后，替换同名元素参考文件并更新索引，后续元素选取以用户最终版为准。
 
-选页复制工具使用 `--aspect-ratio 4:3` 选择4:3参考，省略时默认16:9。
+目录随材料变化，表格双向居中。正文默认静态，页面直接切换，仅在分步讲解确有需要时设置动画。
+
+共享参考只包含通用占位内容与格式。原始研究文档、图表、讲稿及个人信息不进入分享包；`.local/`只保存在本机。

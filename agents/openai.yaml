@@ -1,7 +1,7 @@
 interface:
   display_name: "科研汇报 Academic PPT"
-  short_description: "默认16:9并支持4:3，材料驱动目录、居中表格和简洁直角元素，附中文讲稿"
+  short_description: "默认16:9并支持4:3，分类元素库、材料驱动目录与居中表格，附中文讲稿"
   icon_large: "./assets/preview.png"
-  default_prompt: "使用 $artifact-template-academic-ppt，按我的材料组织详实简洁的科研汇报和目录，页面默认16:9，需要时可改为4:3，表格双向居中，使用原生无序列表和少量直角元素，封面汇报人按本次要求或本机偏好填写，并写好逐页中文讲稿。"
+  default_prompt: "使用 $artifact-template-academic-ppt，按我的材料组织详实简洁的科研汇报和目录，页面默认16:9，需要时可改为4:3，表格双向居中，按分类元素库选取少量组合（以用户最终版为准），使用原生无序列表与简洁直角元素，封面汇报人按本次要求或本机偏好填写，并写好逐页中文讲稿。"
 policy:
   allow_implicit_invocation: true

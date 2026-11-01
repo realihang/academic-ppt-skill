@@ -47,4 +47,16 @@ python scripts/apply_presenter_effects.py --source <起稿.pptx> --output <带�
 
 ## 页面比例适配
 
-默认16:9；用户要求4:3时保留正文36/28磅规范和图片原始比例，重新分配列宽、图表区域和留白。长标签可合理换行，密集多面板原图可按面板重排，并保留坐标、图例、参数及阅读顺序；备注同步更新。4:3示例预览为assets/preview-4x3.png。
+默认16:9；用户要求4:3时保留正文36/28磅规范和图片原始比例，重新分配列宽、图表区域和留白。长标签可合理换行，密集多面板原图可按面板重排，并保留坐标、图例、参数及阅读顺序；备注同步更新。4:3示例预览为assets/previews/template-4x3.png。
+
+## 参考资源分工
+
+| 路径 | 作用 |
+| --- | --- |
+| assets/reference.pptx | 默认16:9母版、字体、占位符与基本页面结构 |
+| assets/reference-4x3.pptx | 4:3母版与基本页面结构 |
+| assets/element-reference.pptx | 分类元素与排版组合；状态和页码见元素索引 |
+| assets/preview.png | 模板卡片的封面缩略图 |
+| assets/previews/ | 两种比例的辅助预览，只用于查看模板外观 |
+
+字体、字号、目录、版式1—3及自由版式的信息集中在本指南；七色色板和文字与底色搭配集中在 composition-guide.md。元素组合通过 element-catalog.md 检索，以用户最终版为准。
