@@ -2,6 +2,6 @@ interface:
   display_name: "Academic PPT"
   short_description: "学术演示文稿设计与修订：原生母版、可编辑元素、证据组织与逐页讲稿"
   icon_large: "./assets/preview.png"
-  default_prompt: "使用 $academic_ppt，根据我的研究材料制作学术汇报PPT：先检查并归类补充模板，按证据组织内容，采用原生母版与适量可编辑元素，撰写逐页中文讲稿，并提供一页默认隐藏的创新对照。"
+  default_prompt: "使用 $academic_ppt，根据我的研究材料制作学术汇报PPT：先读取制作建议并整理补充模板，按证据组织内容，采用原生母版与适量可编辑元素，撰写逐页中文讲稿，并提供一页默认隐藏的创新对照。"
 policy:
   allow_implicit_invocation: true
