@@ -1,569 +1,875 @@
 {
   "status": "review",
-  "slide_count": 85,
-  "pattern_count": 80,
+  "slide_count": 114,
+  "pattern_count": 108,
+  "composition_count": 95,
+  "part_count": 13,
   "inbox_marker": "supplement-inbox-start",
-  "inbox_page": 85,
+  "inbox_page": 114,
   "patterns": [
     {
       "code": "A01",
       "title": "竖标与左齐小标题",
-      "page": 5,
+      "page": 6,
       "index_page": 2,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "A02",
       "title": "横向标题条与正文",
-      "page": 6,
+      "page": 7,
       "index_page": 2,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "A03",
       "title": "嵌入标题的虚线图框",
-      "page": 7,
+      "page": 8,
       "index_page": 2,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "A04",
       "title": "侧边标签与横向说明",
-      "page": 8,
+      "page": 9,
       "index_page": 2,
-      "origin": "retained"
+      "entry_type": "composition",
+      "origin": "updated"
     },
     {
       "code": "A05",
       "title": "大编号与分层说明",
-      "page": 9,
+      "page": 10,
       "index_page": 2,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "A06",
       "title": "标题与两级释义",
-      "page": 10,
+      "page": 11,
       "index_page": 2,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "A07",
       "title": "双层标题与范围标注",
-      "page": 11,
+      "page": 12,
       "index_page": 2,
-      "origin": "new"
+      "entry_type": "composition",
+      "origin": "retained"
     },
     {
       "code": "A08",
       "title": "主题侧标与层级释义",
-      "page": 12,
+      "page": 13,
       "index_page": 2,
-      "origin": "new"
+      "entry_type": "composition",
+      "origin": "retained"
+    },
+    {
+      "code": "A09",
+      "title": "内嵌标题与内容框",
+      "page": 14,
+      "index_page": 2,
+      "entry_type": "composition",
+      "origin": "added"
+    },
+    {
+      "code": "A10",
+      "title": "横向标签与摘要",
+      "page": 15,
+      "index_page": 2,
+      "entry_type": "composition",
+      "origin": "added"
+    },
+    {
+      "code": "A11",
+      "title": "浅蓝标题与说明带",
+      "page": 16,
+      "index_page": 2,
+      "entry_type": "composition",
+      "origin": "added"
+    },
+    {
+      "code": "A12",
+      "title": "双层边界与组内标题",
+      "page": 17,
+      "index_page": 2,
+      "entry_type": "composition",
+      "origin": "added"
+    },
+    {
+      "code": "A13",
+      "title": "浅色小标题与主体说明",
+      "page": 18,
+      "index_page": 2,
+      "entry_type": "composition",
+      "origin": "added"
     },
     {
       "code": "B01",
       "title": "双栏等权对照",
-      "page": 13,
+      "page": 19,
       "index_page": 2,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "B02",
       "title": "三栏并列模块",
-      "page": 14,
+      "page": 20,
       "index_page": 2,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "B03",
       "title": "四象限分组",
-      "page": 15,
+      "page": 21,
       "index_page": 2,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "B04",
       "title": "三列无边框要点",
-      "page": 16,
+      "page": 22,
       "index_page": 2,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "B05",
       "title": "上下两组归类",
-      "page": 17,
+      "page": 23,
       "index_page": 2,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "B06",
       "title": "一项重点与两项补充",
-      "page": 18,
+      "page": 24,
       "index_page": 2,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "B07",
       "title": "四象限图文证据",
-      "page": 19,
+      "page": 25,
       "index_page": 2,
-      "origin": "user"
+      "entry_type": "composition",
+      "origin": "retained"
     },
     {
       "code": "B08",
       "title": "共同基础与差异分组",
-      "page": 20,
+      "page": 26,
       "index_page": 2,
-      "origin": "new"
+      "entry_type": "composition",
+      "origin": "retained"
     },
     {
       "code": "C01",
       "title": "三步横向流程",
-      "page": 21,
+      "page": 27,
       "index_page": 2,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "C02",
       "title": "四步竖向流程",
-      "page": 22,
+      "page": 28,
       "index_page": 2,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "C03",
       "title": "六步折返流程",
-      "page": 23,
+      "page": 29,
       "index_page": 2,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "C04",
       "title": "条件判断与两条分支",
-      "page": 24,
+      "page": 30,
       "index_page": 2,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "C05",
       "title": "双线并行后汇合",
-      "page": 25,
+      "page": 31,
       "index_page": 2,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "C06",
       "title": "同一输入分流再合流",
-      "page": 26,
+      "page": 32,
       "index_page": 2,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "C07",
       "title": "分层矛盾与问题映射",
-      "page": 27,
+      "page": 33,
       "index_page": 2,
-      "origin": "user"
+      "entry_type": "composition",
+      "origin": "retained"
     },
     {
       "code": "C08",
       "title": "双链协同与瓶颈定位",
-      "page": 28,
+      "page": 34,
       "index_page": 2,
-      "origin": "new"
+      "entry_type": "composition",
+      "origin": "retained"
     },
     {
       "code": "D01",
       "title": "两阶段往返反馈",
-      "page": 29,
-      "index_page": 2,
+      "page": 35,
+      "index_page": 3,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "D02",
       "title": "三节点闭环",
-      "page": 30,
-      "index_page": 2,
+      "page": 36,
+      "index_page": 3,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "D03",
       "title": "四节点循环",
-      "page": 31,
-      "index_page": 2,
+      "page": 37,
+      "index_page": 3,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "D04",
       "title": "主流程与局部反馈",
-      "page": 32,
-      "index_page": 2,
+      "page": 38,
+      "index_page": 3,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "D05",
       "title": "双路共享核心",
-      "page": 33,
-      "index_page": 2,
+      "page": 39,
+      "index_page": 3,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "D06",
       "title": "版本与证据同步迭代",
-      "page": 34,
-      "index_page": 2,
+      "page": 40,
+      "index_page": 3,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "D07",
       "title": "相邻双环与共享检查",
-      "page": 35,
-      "index_page": 2,
-      "origin": "new"
+      "page": 41,
+      "index_page": 3,
+      "entry_type": "composition",
+      "origin": "retained"
     },
     {
       "code": "D08",
       "title": "分级推进与局部回退",
-      "page": 36,
-      "index_page": 2,
-      "origin": "new"
+      "page": 42,
+      "index_page": 3,
+      "entry_type": "composition",
+      "origin": "retained"
     },
     {
       "code": "E01",
       "title": "左图右说明",
-      "page": 37,
+      "page": 43,
       "index_page": 3,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "E02",
       "title": "右图左说明",
-      "page": 38,
+      "page": 44,
       "index_page": 3,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "E03",
       "title": "上图下方要点",
-      "page": 39,
+      "page": 45,
       "index_page": 3,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "E04",
       "title": "大图与三个局部标注",
-      "page": 40,
+      "page": 46,
       "index_page": 3,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "E05",
       "title": "左侧双图与右侧说明",
-      "page": 41,
+      "page": 47,
       "index_page": 3,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "E06",
       "title": "四图与相邻图注",
-      "page": 42,
+      "page": 48,
       "index_page": 3,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "E07",
       "title": "主图与四个结果面板",
-      "page": 43,
+      "page": 49,
       "index_page": 3,
-      "origin": "new"
+      "entry_type": "composition",
+      "origin": "retained"
     },
     {
       "code": "E08",
       "title": "图像证据与条件对照",
-      "page": 44,
+      "page": 50,
       "index_page": 3,
-      "origin": "new"
+      "entry_type": "composition",
+      "origin": "retained"
+    },
+    {
+      "code": "E09",
+      "title": "上图下文与页签",
+      "page": 51,
+      "index_page": 3,
+      "entry_type": "composition",
+      "origin": "added"
+    },
+    {
+      "code": "E10",
+      "title": "页签与整框图示",
+      "page": 52,
+      "index_page": 3,
+      "entry_type": "composition",
+      "origin": "added"
+    },
+    {
+      "code": "E11",
+      "title": "大图与下方解释",
+      "page": 53,
+      "index_page": 3,
+      "entry_type": "composition",
+      "origin": "added"
+    },
+    {
+      "code": "E12",
+      "title": "通栏标题与图文框",
+      "page": 54,
+      "index_page": 3,
+      "entry_type": "composition",
+      "origin": "added"
+    },
+    {
+      "code": "E13",
+      "title": "图示与括号注释",
+      "page": 55,
+      "index_page": 3,
+      "entry_type": "composition",
+      "origin": "added"
     },
     {
       "code": "F01",
       "title": "结果图与单句结论条",
-      "page": 45,
+      "page": 56,
       "index_page": 3,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "F02",
       "title": "双图同题对照",
-      "page": 46,
+      "page": 57,
       "index_page": 3,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "F03",
       "title": "图与三条证据解读",
-      "page": 47,
+      "page": 58,
       "index_page": 3,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "F04",
       "title": "表格与解释侧栏",
-      "page": 48,
+      "page": 59,
       "index_page": 3,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "F05",
       "title": "关键指标与条件说明",
-      "page": 49,
+      "page": 60,
       "index_page": 3,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "F06",
       "title": "三项结果与解释配对",
-      "page": 50,
+      "page": 61,
       "index_page": 3,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "F07",
       "title": "三条路径与统一评估",
-      "page": 51,
+      "page": 62,
       "index_page": 3,
-      "origin": "new"
+      "entry_type": "composition",
+      "origin": "retained"
     },
     {
       "code": "F08",
       "title": "问题方法证据对应表",
-      "page": 52,
+      "page": 63,
       "index_page": 3,
-      "origin": "new"
+      "entry_type": "composition",
+      "origin": "retained"
+    },
+    {
+      "code": "F09",
+      "title": "图示与底部结论条",
+      "page": 64,
+      "index_page": 3,
+      "entry_type": "composition",
+      "origin": "added"
     },
     {
       "code": "G01",
       "title": "三层金字塔与释义",
-      "page": 53,
-      "index_page": 3,
+      "page": 65,
+      "index_page": 4,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "G02",
       "title": "从左到右三级分解",
-      "page": 54,
-      "index_page": 3,
+      "page": 66,
+      "index_page": 4,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "G03",
       "title": "自上而下树形结构",
-      "page": 55,
-      "index_page": 3,
+      "page": 67,
+      "index_page": 4,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "G04",
       "title": "三层嵌套范围",
-      "page": 56,
-      "index_page": 3,
+      "page": 68,
+      "index_page": 4,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "G05",
       "title": "三项归纳与共同概念",
-      "page": 57,
-      "index_page": 3,
+      "page": 69,
+      "index_page": 4,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "G06",
       "title": "中心概念与五个分支",
-      "page": 58,
-      "index_page": 3,
+      "page": 70,
+      "index_page": 4,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "G07",
       "title": "总览与三类难点",
-      "page": 59,
-      "index_page": 3,
-      "origin": "user"
+      "page": 71,
+      "index_page": 4,
+      "entry_type": "composition",
+      "origin": "retained"
     },
     {
       "code": "G08",
       "title": "多层路径与共同基础",
-      "page": 60,
-      "index_page": 3,
-      "origin": "new"
+      "page": 72,
+      "index_page": 4,
+      "entry_type": "composition",
+      "origin": "retained"
+    },
+    {
+      "code": "G09",
+      "title": "双金字塔结构对照",
+      "page": 73,
+      "index_page": 4,
+      "entry_type": "composition",
+      "origin": "added"
     },
     {
       "code": "H01",
       "title": "四节点横向时间轴",
-      "page": 61,
+      "page": 74,
       "index_page": 4,
-      "origin": "retained"
+      "entry_type": "composition",
+      "origin": "updated"
     },
     {
       "code": "H02",
       "title": "三节点竖向时间轴",
-      "page": 62,
+      "page": 75,
       "index_page": 4,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "H03",
       "title": "三阶段路线图",
-      "page": 63,
+      "page": 76,
       "index_page": 4,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "H04",
       "title": "三行任务泳道",
-      "page": 64,
+      "page": 77,
       "index_page": 4,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "H05",
       "title": "交错里程碑",
-      "page": 65,
+      "page": 78,
       "index_page": 4,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "H06",
       "title": "起点、当前与目标状态",
-      "page": 66,
+      "page": 79,
       "index_page": 4,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "H07",
       "title": "主任务与里程碑对照",
-      "page": 67,
+      "page": 80,
       "index_page": 4,
-      "origin": "new"
+      "entry_type": "composition",
+      "origin": "retained"
     },
     {
       "code": "H08",
       "title": "证据逐步累积与阶段结论",
-      "page": 68,
+      "page": 81,
       "index_page": 4,
-      "origin": "new"
+      "entry_type": "composition",
+      "origin": "retained"
     },
     {
       "code": "I01",
       "title": "关键短语的局部红色强调",
-      "page": 69,
+      "page": 82,
       "index_page": 4,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "I02",
       "title": "浅黄区域与黑字解释",
-      "page": 70,
+      "page": 83,
       "index_page": 4,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "I03",
       "title": "侧括号聚焦两段说明",
-      "page": 71,
+      "page": 84,
       "index_page": 4,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "I04",
       "title": "三项事实汇聚到结论",
-      "page": 72,
+      "page": 85,
       "index_page": 4,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "I05",
       "title": "问题与双重依据",
-      "page": 73,
+      "page": 86,
       "index_page": 4,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "I06",
       "title": "关键表述与下方释义",
-      "page": 74,
+      "page": 87,
       "index_page": 4,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "I07",
       "title": "局部放大与边界提示",
-      "page": 75,
+      "page": 88,
       "index_page": 4,
-      "origin": "new"
+      "entry_type": "composition",
+      "origin": "retained"
     },
     {
       "code": "I08",
       "title": "多条件与对照结论",
-      "page": 76,
+      "page": 89,
       "index_page": 4,
-      "origin": "new"
+      "entry_type": "composition",
+      "origin": "retained"
+    },
+    {
+      "code": "I09",
+      "title": "深蓝底重点标黄",
+      "page": 90,
+      "index_page": 4,
+      "entry_type": "composition",
+      "origin": "added"
+    },
+    {
+      "code": "I10",
+      "title": "浅蓝底关键词标红",
+      "page": 91,
+      "index_page": 4,
+      "entry_type": "composition",
+      "origin": "added"
+    },
+    {
+      "code": "I11",
+      "title": "侧括号与条件说明",
+      "page": 92,
+      "index_page": 4,
+      "entry_type": "composition",
+      "origin": "added"
     },
     {
       "code": "J01",
       "title": "研究问题与技术路径",
-      "page": 77,
-      "index_page": 4,
+      "page": 93,
+      "index_page": 5,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "J02",
       "title": "模块结构与信息流",
-      "page": 78,
-      "index_page": 4,
+      "page": 94,
+      "index_page": 5,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "J03",
       "title": "实验因素与观测结果",
-      "page": 79,
-      "index_page": 4,
+      "page": 95,
+      "index_page": 5,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "J04",
       "title": "配置比较与贡献解释",
-      "page": 80,
-      "index_page": 4,
+      "page": 96,
+      "index_page": 5,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "J05",
       "title": "机制过程与两项解释",
-      "page": 81,
-      "index_page": 4,
+      "page": 97,
+      "index_page": 5,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "J06",
       "title": "总结与后续问题",
-      "page": 82,
-      "index_page": 4,
+      "page": 98,
+      "index_page": 5,
+      "entry_type": "composition",
       "origin": "retained"
     },
     {
       "code": "J07",
       "title": "问题创新成果矩阵",
-      "page": 83,
-      "index_page": 4,
-      "origin": "user"
+      "page": 99,
+      "index_page": 5,
+      "entry_type": "composition",
+      "origin": "retained"
     },
     {
       "code": "J08",
       "title": "能力应用成效全景",
-      "page": 84,
-      "index_page": 4,
-      "origin": "user"
+      "page": 100,
+      "index_page": 5,
+      "entry_type": "composition",
+      "origin": "retained"
+    },
+    {
+      "code": "K01",
+      "title": "基础边界容器",
+      "page": 101,
+      "index_page": 5,
+      "entry_type": "part",
+      "origin": "added"
+    },
+    {
+      "code": "K02",
+      "title": "引出式标注框",
+      "page": 102,
+      "index_page": 5,
+      "entry_type": "part",
+      "origin": "added"
+    },
+    {
+      "code": "K03",
+      "title": "长条虚线框",
+      "page": 103,
+      "index_page": 5,
+      "entry_type": "part",
+      "origin": "added"
+    },
+    {
+      "code": "K04",
+      "title": "实心标签块",
+      "page": 104,
+      "index_page": 5,
+      "entry_type": "part",
+      "origin": "added"
+    },
+    {
+      "code": "K05",
+      "title": "虚线图框",
+      "page": 105,
+      "index_page": 5,
+      "entry_type": "part",
+      "origin": "added"
+    },
+    {
+      "code": "K06",
+      "title": "汇聚括号",
+      "page": 106,
+      "index_page": 5,
+      "entry_type": "part",
+      "origin": "added"
+    },
+    {
+      "code": "K07",
+      "title": "虚线分隔线",
+      "page": 107,
+      "index_page": 5,
+      "entry_type": "part",
+      "origin": "added"
+    },
+    {
+      "code": "K08",
+      "title": "渐变短箭头",
+      "page": 108,
+      "index_page": 5,
+      "entry_type": "part",
+      "origin": "added"
+    },
+    {
+      "code": "K09",
+      "title": "收束上升箭头",
+      "page": 109,
+      "index_page": 5,
+      "entry_type": "part",
+      "origin": "added"
+    },
+    {
+      "code": "K10",
+      "title": "渐变弯回箭头",
+      "page": 110,
+      "index_page": 5,
+      "entry_type": "part",
+      "origin": "added"
+    },
+    {
+      "code": "K11",
+      "title": "竖向节点线",
+      "page": 111,
+      "index_page": 5,
+      "entry_type": "part",
+      "origin": "added"
+    },
+    {
+      "code": "K12",
+      "title": "渐变细长箭头",
+      "page": 112,
+      "index_page": 5,
+      "entry_type": "part",
+      "origin": "added"
+    },
+    {
+      "code": "K13",
+      "title": "双向循环弧箭头",
+      "page": 113,
+      "index_page": 5,
+      "entry_type": "part",
+      "origin": "added"
     }
   ]
 }

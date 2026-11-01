@@ -1,7 +1,7 @@
 interface:
-  display_name: "科研汇报 Academic PPT"
-  short_description: "默认16:9并支持4:3，80种元素库、补充区检查、隐藏创新对照与中文讲稿"
+  display_name: "Academic PPT"
+  short_description: "学术演示文稿设计与修订：原生母版、可编辑元素、证据组织与逐页讲稿"
   icon_large: "./assets/preview.png"
-  default_prompt: "使用 $artifact-template-academic-ppt，先检查补充区并脱敏归类，再按我的材料组织详实简洁的科研汇报和目录，页面默认16:9，需要时可改为4:3，表格双向居中，按分类元素库选取少量组合（以用户最终版为准），使用原生无序列表与简洁直角元素，封面汇报人按本次要求或本机偏好填写，写好逐页中文讲稿，并先完成正常页、再制作一页默认隐藏的创新对照，把创新思路写在备注；仅在明确反馈后按规则更新本机Memory及模板库。"
+  default_prompt: "使用 $academic_ppt，根据我的研究材料制作学术汇报PPT：先检查并归类补充模板，按证据组织内容，采用原生母版与适量可编辑元素，撰写逐页中文讲稿，并提供一页默认隐藏的创新对照。"
 policy:
   allow_implicit_invocation: true
