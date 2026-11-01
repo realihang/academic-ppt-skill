@@ -10,6 +10,8 @@ from zipfile import ZIP_DEFLATED, ZipFile
 
 from lxml import etree as ET
 
+from refresh_page_numbers import apply_page_numbers
+
 
 P = "http://schemas.openxmlformats.org/presentationml/2006/main"
 R = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
@@ -53,6 +55,7 @@ def clone_slides(reference: Path, output: Path, value: str) -> dict[str, object]
         raise ValueError("输出文件需要以.pptx结尾")
     with ZipFile(reference) as archive:
         data = {name: archive.read(name) for name in archive.namelist()}
+    original = dict(data)
     presentation = ET.fromstring(data["ppt/presentation.xml"])
     rels = ET.fromstring(data["ppt/_rels/presentation.xml.rels"])
     slide_list = presentation.find(f"{{{P}}}sldIdLst")
@@ -80,18 +83,18 @@ def clone_slides(reference: Path, output: Path, value: str) -> dict[str, object]
     for index, page in enumerate(pages, 1):
         old = slides[page - 1]
         new = f"ppt/slides/skillSlide{index}.xml"
-        data[new] = data[old]
+        data[new] = original[old]
         overrides[new] = overrides[old]
-        new_rels = ET.fromstring(data[rel_file(old)])
+        new_rels = ET.fromstring(original[rel_file(old)])
         for relation in new_rels:
             if relation.get("TargetMode") == "External":
                 continue
             target = target_of(old, relation.get("Target", ""))
             if relation.get("Type") == R + "/notesSlide":
                 new_note = f"ppt/notesSlides/skillNotes{index}.xml"
-                data[new_note] = data[target]
+                data[new_note] = original[target]
                 overrides[new_note] = overrides[target]
-                note_rels = ET.fromstring(data[rel_file(target)])
+                note_rels = ET.fromstring(original[rel_file(target)])
                 for note_relation in note_rels:
                     if note_relation.get("TargetMode") == "External":
                         continue
@@ -122,6 +125,8 @@ def clone_slides(reference: Path, output: Path, value: str) -> dict[str, object]
             if node.tag.endswith("}Slides"):
                 node.text = str(len(pages))
         data["docProps/app.xml"] = xml(app)
+
+    apply_page_numbers(data)
 
     # Prune inactive sample slides and notes by following the package graph.
     keep: set[str] = set()

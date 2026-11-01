@@ -37,6 +37,15 @@ def text_content(node: E.Element) -> str:
     return "\n".join(paragraphs).strip()
 
 
+def is_page_number(shape: E.Element) -> bool:
+    """Recognize native current/total chrome without hiding added advice."""
+    ph = shape.find('p:nvSpPr/p:nvPr/p:ph', N)
+    field = shape.find('.//a:fld', N)
+    return bool(ph is not None and ph.get('type') == 'sldNum'
+                and field is not None and field.get('type') == 'slidenum'
+                and re.fullmatch(r'\d+/\d+', text_content(shape)))
+
+
 def feedback_item(text: str, page: int, part: str, source: str,
                   shape: E.Element | None = None) -> dict:
     """Identify stable text items; a marker is a review hint, not permission to act."""
@@ -107,6 +116,8 @@ def inspect_catalog(path: Path, records: dict | None = None) -> dict:
             nodes = []
             tree = slide.find("p:cSld/p:spTree", N)
             for node in list(tree)[2:]:
+                if is_page_number(node):
+                    continue
                 prop = node.find(".//p:cNvPr", N)
                 if prop is not None and prop.get("name") == "supplement-inbox-start":
                     # A renamed or edited marker can contain a user-supplied addition.
@@ -120,6 +131,8 @@ def inspect_catalog(path: Path, records: dict | None = None) -> dict:
             for node in nodes:
                 shapes = [node] if node.tag == f"{{{P}}}sp" else node.findall(".//p:sp", N)
                 for shape in shapes:
+                    if is_page_number(shape):
+                        continue
                     body = shape.find("p:txBody", N)
                     if body is None:
                         continue
