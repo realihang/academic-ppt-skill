@@ -2,7 +2,13 @@
 
 **把研究材料组织成逻辑清楚、图文易读、能够继续编辑的学术演示文稿。**
 
-[![MIT License](asset/license-mit.svg)](LICENSE)
+<p align="center">
+  <a href="LICENSE"><img src="asset/license-mit.svg" alt="License: MIT" height="24"></a>
+  &nbsp;
+  <a href="SKILL.md"><img src="asset/codex-skill.svg" alt="Codex Skill" height="24"></a>
+  &nbsp;
+  <a href="assets/reference.pptx"><img src="asset/editable-pptx.svg" alt="Editable PPTX" height="24"></a>
+</p>
 
 Academic PPT 是一个面向 Codex 的学术 PPT 制作与修订技能，适用于论文汇报、研究组会、开题报告和学位答辩。它将研究内容的组织方法、原生 PowerPoint 母版、可编辑元素库、逐页中文讲稿及交付检查放在同一套工作流程中。
 
