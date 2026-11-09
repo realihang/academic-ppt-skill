@@ -11,6 +11,8 @@ from zipfile import ZIP_DEFLATED, ZipFile
 
 from lxml import etree as ET
 
+from finalize_presentation import apply_delivery_defaults
+
 P = 'http://schemas.openxmlformats.org/presentationml/2006/main'
 A = 'http://schemas.openxmlformats.org/drawingml/2006/main'
 R = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships'
@@ -164,7 +166,7 @@ def paragraph_properties(parent: ET._Element) -> None:
 
 def run_properties(parent: ET._Element, tag: str, color: str) -> ET._Element:
     """Use Arial 20 pt for all page-number characters."""
-    node = ET.SubElement(parent, f'{{{A}}}{tag}', lang='en-US', sz='2000', b='0', dirty='0')
+    node = ET.SubElement(parent, f'{{{A}}}{tag}', lang='en-US', sz='2000', b='1', dirty='0')
     ET.SubElement(ET.SubElement(node, f'{{{A}}}solidFill'), f'{{{A}}}srgbClr', val=color)
     for font_tag in ('latin', 'ea', 'cs'):
         ET.SubElement(node, f'{{{A}}}{font_tag}', typeface='Arial')
@@ -279,10 +281,12 @@ def refresh(source: Path, output: Path) -> dict[str, object]:
         data = {info.filename: archive.read(info.filename) for info in archive.infolist()}
         infos = archive.infolist()
     result = apply_page_numbers(data)
+    result.update(apply_delivery_defaults(data))
     output.parent.mkdir(parents=True, exist_ok=True)
     with ZipFile(output, 'x', ZIP_DEFLATED) as archive:
-        for info in infos:
-            archive.writestr(info, data[info.filename])
+        info_map = {info.filename: info for info in infos}
+        for name, value in data.items():
+            archive.writestr(info_map.get(name, name), value)
     result['output'] = str(output.resolve())
     return result
 

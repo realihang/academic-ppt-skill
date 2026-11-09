@@ -10,6 +10,7 @@ from zipfile import ZIP_DEFLATED, ZipFile
 
 from lxml import etree as ET
 
+from finalize_presentation import apply_delivery_defaults
 from refresh_page_numbers import apply_page_numbers
 
 
@@ -158,9 +159,11 @@ def clone_slides(reference: Path, output: Path, value: str) -> dict[str, object]
             )
     data["[Content_Types].xml"] = xml(ctypes)
     keep.add("[Content_Types].xml")
+    data = {name: data[name] for name in keep}
+    apply_delivery_defaults(data)
     output.parent.mkdir(parents=True, exist_ok=True)
     with ZipFile(output, "x", ZIP_DEFLATED) as archive:
-        for name in sorted(keep):
+        for name in sorted(data):
             archive.writestr(name, data[name])
     return {
         "output": str(output.resolve()),

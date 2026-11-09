@@ -10,6 +10,8 @@ from zipfile import ZIP_DEFLATED, ZipFile
 
 from lxml import etree as E
 
+from finalize_presentation import apply_delivery_defaults
+
 
 P = "http://schemas.openxmlformats.org/presentationml/2006/main"
 NS = {"p": P}
@@ -109,6 +111,7 @@ def apply(source: Path, output: Path, duration: int, replace_existing: bool = Fa
             root = E.fromstring(data)
             report[name] = add_presenter_effects(root, duration, replace_existing)
             package[name] = E.tostring(root, encoding="utf-8", xml_declaration=True, standalone=True)
+    apply_delivery_defaults(package)
     output.parent.mkdir(parents=True, exist_ok=True)
     with ZipFile(output, "x", ZIP_DEFLATED) as archive:
         for name, data in package.items():
