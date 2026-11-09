@@ -5,7 +5,7 @@
 - 参考PPT使用通用文字、空图框与示例表格，保留所需母版及可编辑格式。
 - 检查普通页、隐藏页、备注、批注、母版、版式、文档属性和压缩包内失去引用的资源。移除原始正文、内容图片、嵌入附件、作者、修改人、单位、路径及外部链接。
 - 重新渲染参考PPT并生成预览；不复用含原始正文的截图或总览图。
-- 分享包仅列入SKILL.md、artifact-template.json、agents/、references/、scripts/和经审查的assets/。`.local/`、原始资料、制作中间文件、历史备份、缓存和凭据均排除。
+- 分享包可列入SKILL.md、README.md、LICENSE、requirements.txt、.gitignore、artifact-template.json、agents/、references/、scripts/及经审查的assets/和README插图asset/。`.local/`、原始资料、制作中间文件、历史备份、缓存和凭据均排除。
 - 上传前逐文件核对，再核对GitHub上的文件清单与哈希。材料内容仅能进入用户明确要求的本次汇报。
 - 已误上传的材料需同时处理分支和提交历史。GitHub缓存或旧对象的彻底清除由平台处理，不能以删除当前文件代替。
 
